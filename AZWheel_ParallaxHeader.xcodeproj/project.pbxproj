@@ -13,6 +13,9 @@
 		4715B5B61F36B98400E7524C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4715B5B41F36B98400E7524C /* Main.storyboard */; };
 		4715B5B81F36B98400E7524C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4715B5B71F36B98400E7524C /* Assets.xcassets */; };
 		4715B5BB1F36B98400E7524C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4715B5B91F36B98400E7524C /* LaunchScreen.storyboard */; };
+		4715B5C51F36D7C300E7524C /* UIScrollView+ParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5C41F36D7C300E7524C /* UIScrollView+ParallaxHeader.m */; };
+		4715B5C81F36D84100E7524C /* ParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5C71F36D84100E7524C /* ParallaxHeader.m */; };
+		4715B5CC1F3717BB00E7524C /* JellyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5CB1F3717BB00E7524C /* JellyHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		4715B5B71F36B98400E7524C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4715B5BA1F36B98400E7524C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4715B5BC1F36B98400E7524C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4715B5C31F36D7C300E7524C /* UIScrollView+ParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+ParallaxHeader.h"; path = "ScrollViewHeader/UIScrollView+ParallaxHeader.h"; sourceTree = "<group>"; };
+		4715B5C41F36D7C300E7524C /* UIScrollView+ParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+ParallaxHeader.m"; path = "ScrollViewHeader/UIScrollView+ParallaxHeader.m"; sourceTree = "<group>"; };
+		4715B5C61F36D84100E7524C /* ParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParallaxHeader.h; path = ScrollViewHeader/ParallaxHeader.h; sourceTree = "<group>"; };
+		4715B5C71F36D84100E7524C /* ParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParallaxHeader.m; path = ScrollViewHeader/ParallaxHeader.m; sourceTree = "<group>"; };
+		4715B5CA1F3717BB00E7524C /* JellyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JellyHeader.h; path = SpecialHeader/JellyHeader.h; sourceTree = "<group>"; };
+		4715B5CB1F3717BB00E7524C /* JellyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JellyHeader.m; path = SpecialHeader/JellyHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,8 @@
 		4715B59F1F36B98400E7524C = {
 			isa = PBXGroup;
 			children = (
+				4715B5C91F37177B00E7524C /* SpecialHeader */,
+				4715B5C21F36D6F600E7524C /* ScrollViewHeader */,
 				4715B5AA1F36B98400E7524C /* AZWheel_ParallaxHeader */,
 				4715B5A91F36B98400E7524C /* Products */,
 			);
@@ -77,6 +88,26 @@
 				4715B5AC1F36B98400E7524C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4715B5C21F36D6F600E7524C /* ScrollViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				4715B5C31F36D7C300E7524C /* UIScrollView+ParallaxHeader.h */,
+				4715B5C41F36D7C300E7524C /* UIScrollView+ParallaxHeader.m */,
+				4715B5C61F36D84100E7524C /* ParallaxHeader.h */,
+				4715B5C71F36D84100E7524C /* ParallaxHeader.m */,
+			);
+			name = ScrollViewHeader;
+			sourceTree = "<group>";
+		};
+		4715B5C91F37177B00E7524C /* SpecialHeader */ = {
+			isa = PBXGroup;
+			children = (
+				4715B5CA1F3717BB00E7524C /* JellyHeader.h */,
+				4715B5CB1F3717BB00E7524C /* JellyHeader.m */,
+			);
+			name = SpecialHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4715B5B31F36B98400E7524C /* ViewController.m in Sources */,
+				4715B5C51F36D7C300E7524C /* UIScrollView+ParallaxHeader.m in Sources */,
 				4715B5B01F36B98400E7524C /* AppDelegate.m in Sources */,
+				4715B5CC1F3717BB00E7524C /* JellyHeader.m in Sources */,
 				4715B5AD1F36B98400E7524C /* main.m in Sources */,
+				4715B5C81F36D84100E7524C /* ParallaxHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
