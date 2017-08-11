@@ -24,7 +24,6 @@
     return self;
 }
 - (void)reset {
-    _minimumHeight = 64;
     self.backgroundColor = [UIColor whiteColor];
     [_bgImageView removeFromSuperview];
     _bgImageView = nil;

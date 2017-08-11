@@ -16,6 +16,7 @@
 		4715B5C51F36D7C300E7524C /* UIScrollView+ParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5C41F36D7C300E7524C /* UIScrollView+ParallaxHeader.m */; };
 		4715B5C81F36D84100E7524C /* ParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5C71F36D84100E7524C /* ParallaxHeader.m */; };
 		4715B5CC1F3717BB00E7524C /* JellyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5CB1F3717BB00E7524C /* JellyHeader.m */; };
+		63AEC6A01F3D520600C09F39 /* TableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AEC69F1F3D520600C09F39 /* TableTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		4715B5C71F36D84100E7524C /* ParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParallaxHeader.m; path = ScrollViewHeader/ParallaxHeader.m; sourceTree = "<group>"; };
 		4715B5CA1F3717BB00E7524C /* JellyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JellyHeader.h; path = SpecialHeader/JellyHeader.h; sourceTree = "<group>"; };
 		4715B5CB1F3717BB00E7524C /* JellyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JellyHeader.m; path = SpecialHeader/JellyHeader.m; sourceTree = "<group>"; };
+		63AEC69E1F3D520600C09F39 /* TableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableTableViewController.h; sourceTree = "<group>"; };
+		63AEC69F1F3D520600C09F39 /* TableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				4715B5B91F36B98400E7524C /* LaunchScreen.storyboard */,
 				4715B5BC1F36B98400E7524C /* Info.plist */,
 				4715B5AB1F36B98400E7524C /* Supporting Files */,
+				63AEC69E1F3D520600C09F39 /* TableTableViewController.h */,
+				63AEC69F1F3D520600C09F39 /* TableTableViewController.m */,
 			);
 			path = AZWheel_ParallaxHeader;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				TargetAttributes = {
 					4715B5A71F36B98400E7524C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7884U55YA7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -187,6 +193,7 @@
 				4715B5CC1F3717BB00E7524C /* JellyHeader.m in Sources */,
 				4715B5AD1F36B98400E7524C /* main.m in Sources */,
 				4715B5C81F36D84100E7524C /* ParallaxHeader.m in Sources */,
+				63AEC6A01F3D520600C09F39 /* TableTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7884U55YA7;
 				INFOPLIST_FILE = AZWheel_ParallaxHeader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "azz.AZWheel-ParallaxHeader";
@@ -317,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7884U55YA7;
 				INFOPLIST_FILE = AZWheel_ParallaxHeader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "azz.AZWheel-ParallaxHeader";
@@ -343,6 +352,7 @@
 				4715B5C11F36B98400E7524C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
