@@ -58,7 +58,7 @@
 - (void)showWZT:(UITableView*)tableView {
     JellyHeader *jellyHeader = [[JellyHeader alloc] initWithFrame:CGRectMake(0,0, _mWidth, 550)];
     jellyHeader.bottomColor = [UIColor colorWithRed:246/255.f green:238/255.f blue:226/255.f alpha:1];
-    tableView.parallaxHeader.height = 550;
+    tableView.parallaxHeader.maxHeight = 550;
     tableView.parallaxHeader.minimumHeight = 164;
     tableView.parallaxHeader.view = jellyHeader;
     tableView.parallaxHeader.delegate = jellyHeader;

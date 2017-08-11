@@ -51,7 +51,7 @@
     [imageView addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     
     tableView.parallaxHeader.view = imageView;
-    tableView.parallaxHeader.height = 300;
+    tableView.parallaxHeader.maxHeight = 300;
     tableView.parallaxHeader.minimumHeight = self.minimumHeight ? : 100;
     tableView.parallaxHeader.delegate = self;
 }

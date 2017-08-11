@@ -18,7 +18,7 @@
 //provide for out
 @property (nonatomic,strong) UIView *view; //想要显示的view
 @property (nonatomic) CGFloat minimumHeight; //最小高度，默认为64（导航栏高度）
-@property (nonatomic) CGFloat height; //设定正常时的高度（不是跟随滑动变化的）
+@property (nonatomic) CGFloat maxHeight; //设定正常时的高度（不是跟随滑动变化的）
 @property (nonatomic,weak)id<ParallaxHeaderDelegate> delegate;
 @property (nonatomic,strong)UIImage *bgImage; //背景图片
 

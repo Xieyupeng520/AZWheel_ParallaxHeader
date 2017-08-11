@@ -31,7 +31,7 @@
 #pragma mark - layout
 - (void)layoutSubviews {
     
-    CGFloat y = self.scrollView.contentInset.top + self.scrollView.contentOffset.y - _height;
+    CGFloat y = self.scrollView.contentInset.top + self.scrollView.contentOffset.y - _maxHeight;
     CGRect frame = (CGRect){
         .origin.x       = 0,
         .origin.y       = y,
@@ -41,14 +41,14 @@
     self.frame = frame;
     
     if (_bgImageView) {
-        if (frame.size.height > self.height) {
+        if (frame.size.height > self.maxHeight) {
             _bgImageView.frame = (CGRect){
                 .origin.x       = 0,
                 .origin.y       = 0,
-                .size.width     = self.frame.size.width + (self.frame.size.height - self.height),
+                .size.width     = self.frame.size.width + (self.frame.size.height - self.maxHeight),
                 .size.height    = self.frame.size.height
             };
-        } else if (frame.size.height == self.height) {
+        } else if (frame.size.height == self.maxHeight) {
             _bgImageView.frame = (CGRect){
                 .origin.x       = 0,
                 .origin.y       = 0,
@@ -62,7 +62,7 @@
     }
     
     //set progress
-    CGFloat distance = (_height - _minimumHeight)?:_height;
+    CGFloat distance = (_maxHeight - _minimumHeight)?:_maxHeight;
     self.progress = (frame.size.height - _minimumHeight) / distance;
 }
 
@@ -116,9 +116,9 @@ static void * const kParallaxHeaderKVOContext = (void*)&kParallaxHeaderKVOContex
     }
 }
 
-- (void)setHeight:(CGFloat)height {
-    if (_height != height) {
-        _height = height;
+- (void)setMaxHeight:(CGFloat)height {
+    if (_maxHeight != height) {
+        _maxHeight = height;
         [self adjustScrollViewTopInset:height];
     }
 }
