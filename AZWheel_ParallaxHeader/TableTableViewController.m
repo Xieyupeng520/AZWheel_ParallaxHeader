@@ -71,8 +71,9 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    //导航栏默认会给tableView加64的inset
     UIEdgeInsets inset = tableView.contentInset;
-    inset.top -= 22;
+    inset.top = 300;
     tableView.contentInset = inset;
     
     return 1;
@@ -86,6 +87,8 @@
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"TableCell"];
+        
+        cell.backgroundColor = [UIColor colorWithRed:246/255.f green:238/255.f blue:226/255.f alpha:1];
     }
     NSString *appendStr = @"push";
     cell.textLabel.text = [NSString stringWithFormat:@"Line %ld  -- %@", (long)indexPath.row, appendStr];
