@@ -16,6 +16,7 @@
 		4715B5C51F36D7C300E7524C /* UIScrollView+ParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5C41F36D7C300E7524C /* UIScrollView+ParallaxHeader.m */; };
 		4715B5C81F36D84100E7524C /* ParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5C71F36D84100E7524C /* ParallaxHeader.m */; };
 		4715B5CC1F3717BB00E7524C /* JellyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4715B5CB1F3717BB00E7524C /* JellyHeader.m */; };
+		637144C91FB31CB900092F86 /* 20170811.gif in Resources */ = {isa = PBXBuildFile; fileRef = 637144C81FB31CB900092F86 /* 20170811.gif */; };
 		63AEC6A01F3D520600C09F39 /* TableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AEC69F1F3D520600C09F39 /* TableTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		4715B5C71F36D84100E7524C /* ParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParallaxHeader.m; path = ScrollViewHeader/ParallaxHeader.m; sourceTree = "<group>"; };
 		4715B5CA1F3717BB00E7524C /* JellyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JellyHeader.h; path = SpecialHeader/JellyHeader.h; sourceTree = "<group>"; };
 		4715B5CB1F3717BB00E7524C /* JellyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JellyHeader.m; path = SpecialHeader/JellyHeader.m; sourceTree = "<group>"; };
+		637144C81FB31CB900092F86 /* 20170811.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 20170811.gif; sourceTree = "<group>"; };
 		63AEC69E1F3D520600C09F39 /* TableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableTableViewController.h; sourceTree = "<group>"; };
 		63AEC69F1F3D520600C09F39 /* TableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +56,7 @@
 		4715B59F1F36B98400E7524C = {
 			isa = PBXGroup;
 			children = (
+				637144C81FB31CB900092F86 /* 20170811.gif */,
 				4715B5C91F37177B00E7524C /* SpecialHeader */,
 				4715B5C21F36D6F600E7524C /* ScrollViewHeader */,
 				4715B5AA1F36B98400E7524C /* AZWheel_ParallaxHeader */,
@@ -174,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637144C91FB31CB900092F86 /* 20170811.gif in Resources */,
 				4715B5BB1F36B98400E7524C /* LaunchScreen.storyboard in Resources */,
 				4715B5B81F36B98400E7524C /* Assets.xcassets in Resources */,
 				4715B5B61F36B98400E7524C /* Main.storyboard in Resources */,
